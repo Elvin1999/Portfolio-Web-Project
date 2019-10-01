@@ -1,0 +1,168 @@
+:root {
+    --main-color: #E79602;
+  }
+/* Color Controller Start */
+.fa-snowflake-o{
+   font-size: 25px;
+   color: black; 
+   text-align: center;
+   margin: auto;
+   animation: circle 2.5s infinite;
+}
+@keyframes circle{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+#controller{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: white;
+    position: fixed;
+    top: 18%;
+    left: -2px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+#colorContainer{
+    width: 200px;
+    background-color: white;
+    padding: 5px;
+    position: fixed;
+    top: 18%;
+    left: -210px;
+    border-radius: 5%;
+}
+@keyframes colormove1 {
+    from {left:-210px;}
+    to {left: 5px;}   
+  }
+  @keyframes colormove2 {
+    from {left:5px;}
+    to {left: -210px;}   
+  }
+  @keyframes ctrlmove1 {
+    from {left:-2px;}
+    to {left: 211px;}   
+  }
+  @keyframes ctrlmove2 {
+    from {left:211px;}
+    to {left: -2px;}   
+  }
+#colorContainer > div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    width: 95%;
+}
+#colorContainer button{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 3px;
+    padding: 0;
+}
+/* Colors */
+.c-1{
+background-color: #9a6fe6;
+}
+.c-2{
+    background-color: #d31c5b;
+}
+.c-3{
+    background-color: #1f88dd;
+}
+.c-4{
+    background-color: #e79602;
+}
+.c-5{
+    background-color: #e75dba;
+}
+.c-6{
+    background-color: #469F4A;
+}
+.c-7{
+    background-color: #177F85;
+}
+.c-8{
+    background-color: #0DAB93;
+}
+/* Color Controller Finish */
+body{
+    background-color:#100e17; 
+}
+
+/* Header */
+header{
+    padding: 30px 0;
+    background-color: transparent;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    transition: 0.8s background-color;
+}
+header a{
+    text-decoration:none;
+    font: 1.2em "Arial";
+    margin: 0 15px;
+    color: white;
+    display: inline-block;
+    padding: 0 0 10px 0;
+    transition: 0.7s color;
+}
+header a:hover{
+    color: var(--main-color);
+}
+
+/* Introduction */
+#introduction{
+    height: 90vh;
+    background:url("images/home-bg-img.jpg") center/cover no-repeat;
+    box-shadow:inset 100vh 100vh 100vh rgba(0,0,0,.9);
+    display: flex;
+    text-align: center;
+}
+#dataContainer{
+    width: 70%;
+    margin: auto; 
+}
+#hello{
+    color: white;
+    padding: 10px 10px;
+    width: 130px;
+    margin: auto;
+    background-color: var(--main-color);
+    border-radius: 10px 15px 15px 0;
+    transition: 0.8s background-color;
+    float: left;
+}
+.first{
+    width: 40%;
+    text-align: center;
+}
+.first h1,h3{
+    margin-top: 10px;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.first h1{
+    font:4em "Arial";
+}
+.first h3{
+    font: 2em "Arial";
+}
+
+
+
+
+
+
+
